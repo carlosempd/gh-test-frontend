@@ -1,0 +1,31 @@
+.table-section {
+    padding: 1rem;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+    background-color: rgba(227, 216, 216, 0.85);
+}
+
+.mat-column-date {
+    min-width: 110px;
+}
+
+.message-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.avatar-span {
+    display: flex;
+    gap: 10px;
+}
+
+mat-icon {
+    font-size: 15px;
+    margin-left: 10px;
+}
