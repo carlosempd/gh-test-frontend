@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
+import { CommitModule } from '../commit/commit.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { LayoutComponent } from './layout.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    CommitModule,
     CommonModule,
     LayoutRoutingModule,
   ]
