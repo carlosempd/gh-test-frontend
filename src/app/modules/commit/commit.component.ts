@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Commit } from 'src/app/core/models/commit.model';
 import { CommitService } from 'src/app/core/services/commit.service';
 
 
@@ -10,7 +11,7 @@ import { CommitService } from 'src/app/core/services/commit.service';
 })
 export class CommitComponent implements OnInit {
   selected = new FormControl(0); // Tab index selected, 0 for frontend 1 for backend
-  data = [];
+  data: Commit[] = [];
   ctx = { commitsContext: this.data };
   displayedColumns: string[] = ['sha', 'message', 'date', 'author'];
   loading = false;
