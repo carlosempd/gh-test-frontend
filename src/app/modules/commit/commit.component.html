@@ -12,6 +12,16 @@
 	<ng-template #tableTemplate let-commits="commitsContext">
 		<section class="table-section">
 			<mat-spinner *ngIf="loading"></mat-spinner>
+			
+			<span *ngIf="!loading" class="filter-span">
+				<input
+					class="input"
+					(keyup)="applyFilter($event)"
+					type="text"
+					placeholder="Search a commit by SHA or Message"
+				>
+			</span>
+
 			<table *ngIf="!loading" mat-table [dataSource]="commits" class="mat-elevation-z8">
 			
 				<!-- Sha Column -->
