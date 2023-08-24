@@ -11,7 +11,8 @@
 
 	<ng-template #tableTemplate let-commits="commitsContext">
 		<section class="table-section">
-			<table mat-table [dataSource]="datasource" class="mat-elevation-z8">
+			<mat-spinner *ngIf="loading"></mat-spinner>
+			<table *ngIf="!loading" mat-table [dataSource]="commits" class="mat-elevation-z8">
 			
 				<!-- Sha Column -->
 				<ng-container matColumnDef="sha">
